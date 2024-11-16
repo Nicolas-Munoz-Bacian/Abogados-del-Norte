@@ -2,13 +2,13 @@
 
 :root{
     --color-primario:#ffff;
-    --color-secundario:#d15959;
+    --color-secundario:#7f1710;
     --color-terciario:#f5edd6;
     --color-cuarto:#0000;
     --color-quinto:#dbffac;
     --color-sexto:#dbe3e0;
-    --color-septimo:#c0beb3;
-
+    --color-dorado:#efb810;
+    --color-gris-oscuro:#636571;
     --fuente-calibri:'calibri', sans serif;
     --fuente-calibri-negrita:'calibri', bold;
     --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', bold;
@@ -302,7 +302,7 @@ a{
     width: 100%;
     padding: 14px 10px;
     font-size: 80%;
-    border: 2px solid var(--color-septimo);
+    border: 2px solid var(--color-secundario);
     margin-bottom: 20px;
     border-radius: 8px;
     outline: 0px;
@@ -331,14 +331,14 @@ a{
     border: none;
     outline: 0px;
     background: var(--color-secundario);
-    color: var(--color-terciario);
+    color: var(--color-primario);
     border-radius: 4px;
     cursor: pointer;
     transition: all 300ms ease;
 }
 
 .btn_enviar:hover{
-    background: var(--color-terciario);
+    background: var(--color-primario);
     color: var(--color-secundario);
 }
 

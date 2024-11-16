@@ -2,14 +2,13 @@
 
 :root{
     --color-primario:#ffff;
-    --color-secundario:#d15959;
+    --color-secundario:#7f1710;
     --color-terciario:#f5edd6;
     --color-cuarto:#0000;
     --color-quinto:#dbffac;
     --color-sexto:#dbe3e0;
-    --color-septimo:#c0beb3;
-    --color-octavo:#f7f6ef;
-
+    --color-dorado:#efb810;
+    --color-gris-oscuro:#636571;
     --fuente-calibri:'calibri', sans serif;
     --fuente-calibri-negrita:'calibri', bold;
     --fuente-Sicret-Mono-PERSONAL:'Sicret Mono PERSONAL', bold;
@@ -21,14 +20,15 @@
     box-sizing: border-box;
 }
 
+/**---HEADER--**/
+
 header{
     box-sizing: content-box;
     position: initial;
     display: flex;
-    background-color: var(--color-terciario);
+    background-color: #111010;
     justify-content: space-around;
     align-items: center;
-    padding: 1% 0% 1% 1%;
 }
 
 body {
@@ -50,6 +50,17 @@ body {
     flex-direction:column;
     justify-content:center;
     position: initial;
+}
+
+.col-lg-9{
+    position: relative;
+    background-color: var(--color-primario);
+    color: var(--color-gris-oscuro);
+    font-family: var(--fuente-calibri);
+    font-size: 60%;
+    width: 500px;
+    height: 160px;
+    padding: 6px;
 }
 
 .menu{
@@ -116,6 +127,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 
 .resolucion{
     width: 100%;
@@ -306,7 +318,7 @@ a{
     display: inline-block;
     flex-wrap: wrap-reverse;
     align-items: flex-start;
-    background-color: var(--color-terciario);
+    background-color: var(--color-primario);
     border-radius: 20px;
     width: 30%;
     height: auto;
@@ -319,7 +331,7 @@ a{
     display: inline-block;
     flex-wrap: wrap-reverse;
     align-items: flex-start;
-    background-color: var(--color-terciario);
+    background-color: var(--color-primario);
     border-radius: 20px;
     width: 30%;
     height: auto;
@@ -343,7 +355,7 @@ a{
 
 .footer_text_contenido{
     display: flex;
-    color: var(--color-terciario);
+    color: var(--color-primario);
     align-items:baseline;
     position: initial;
     flex-wrap: wrap;
@@ -352,8 +364,7 @@ a{
 
 .presentación__logo__pastel{
     display: flex;
-    flex-direction: column-reverse;
-    width: 35%;
+    width: 100px;
     height:auto;
     flex-wrap: wrap;
     object-fit: contain;
@@ -371,7 +382,7 @@ a{
 .derechos_de_autor_text .p_footer{
     position: initial;
     font-size: 34%;
-    color: var(--color-terciario);
+    color: var(--color-primario);
     font-family: var(--fuente-calibri);
     display: flex;
     flex-direction: column;

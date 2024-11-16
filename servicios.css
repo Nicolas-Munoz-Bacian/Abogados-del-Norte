@@ -2,7 +2,7 @@
 
 :root{
     --color-primario:#ffff;
-    --color-secundario:#8f1010;
+    --color-secundario:#7f1710;
     --color-terciario:#f5edd6;
     --color-cuarto:#0000;
     --color-quinto:#dbffac;
@@ -191,22 +191,23 @@ a{
     font-family: var(--fuente-calibri-negrita);
     color: var(--color-secundario);
     font-size: 100%;
-    margin: 0 5px 2px;
+    margin: 0 0px 0px 50px;
 }
 
 /**---Slider---**/
 
 .container {
     position: relative;
-    width: 600px; /* Ajusta el ancho según tu necesidad */
+    width: 700px; /* Ajusta el ancho según tu necesidad */
     overflow: hidden; /* Oculta cualquier contenido fuera del contenedor */
 }
 
 .slider {
     display: flex;
-    background: white; /* Color de fondo del slider */
+    background: var(--color-primario); /* Color de fondo del slider */
     padding: 2px; 
     height: 320px; /* Altura del slider */
+    width: 70%;
     overflow: hidden; /* Esto asegura que no haya barras de scroll */
     scroll-behavior: smooth; /* Desplazamiento suave */
 }
@@ -238,7 +239,7 @@ a{
 .container .prev {
     left: 10px; /* Espacio desde el borde izquierdo */
     top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente */
+    transform: translateY(-50%) translateX(50%); /* Centra verticalmente */
 }
 
 .container .next {
@@ -255,7 +256,7 @@ a{
     border-radius: 20px;
     margin: 10px;
     width: 300px; /* Un ancho fijo o ajusta según tus necesidades */
-    height: 280px; /* Altura de las tarjetas */
+    height: 290px; /* Altura de las tarjetas */
     text-align: center; /* Centra el texto */
 }
 
