@@ -355,7 +355,7 @@ a{
 .derechos_de_autor_text .p_footer{
     position: initial;
     font-size: 34%;
-    color: var(--color-terciario);
+    color: var(--color-primario);
     font-family: var(--fuente-calibri);
     display: flex;
     flex-direction: column;
