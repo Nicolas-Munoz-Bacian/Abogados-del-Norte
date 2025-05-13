@@ -354,6 +354,7 @@ a{
     font-size: 34%;
     color: var(--color-primario);
     font-family: var(--fuente-calibri);
+    text-decoration: none;
     display: flex;
     flex-direction: column;
 }

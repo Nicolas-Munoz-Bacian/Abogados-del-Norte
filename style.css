@@ -392,6 +392,7 @@ a{
     font-size: 34%;
     color: var(--color-primario);
     font-family: var(--fuente-calibri);
+    text-decoration: none;
     display: flex;
     flex-direction: column;
 }
@@ -402,4 +403,10 @@ a{
     height: auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+a[href^="mailto"],
+a[href^="tel"] {
+    color: var(--color-primario);
+    text-decoration: none;
 }
