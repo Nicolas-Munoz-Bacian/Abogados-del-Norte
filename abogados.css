@@ -57,7 +57,7 @@ body {
     background-color: var(--color-primario);
     color: var(--color-gris-oscuro);
     font-family: var(--fuente-calibri);
-    font-size: 60%;
+    font-size: 45%;
     width: 500px;
     height: 160px;
     padding: 6px;
@@ -134,59 +134,58 @@ a{
 
 /*-------------Breakpoints-------------*/
 
-/**Movil**/
-
-@media (max-width: 890px){
-    .desktop {
+@media (max-width: 767px) {
+    .desktop, .tablet {
         display: none;
     }
-    .tablet {
-        display: none;
+    .movil {
+        display: block;
     }
-    .movil {}
 
-    nav ul a{
+    nav ul a {
         font-size: 16px;
         display: flex;
     }
 }
 
-/**Tablet**/
-
-@media (min-width: 768px) and (max-width: 990px){
-    .desktop {display: none;}
-    .tablet {}
-    .movil {display: none;}
+/* ========== TABLET (de 768px a 1023px) ========== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .desktop, .movil {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
 }
 
-/**Escritorio**/
+/* ========== ESCRITORIO (desde 1024px en adelante) ========== */
+@media (min-width: 1024px) {
+    .movil, .tablet {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
 
-@media (min-width: 990px){
-    .desktop {}
-    .tablet {display: none;}
-    .movil {display: none;}
-    
-    .ul_menu{
+    .ul_menu {
         display: flex;
         width: 100%;
         height: 100%;
         top: 80px;
         left: -100%;
         text-align: center;
-    }
-    nav .ul_menu{
         margin: 10px 0;
         line-height: 30px;
     }
-    nav .ul_menu a{
+
+    nav .ul_menu a {
         font-size: 20px;
     }
 
     .btn:hover {
         background-color: var(--color-secundario);
-        font-family: var(--fuente-calibri-negrita) var(--color-secundario) ;
+        font-family: var(--fuente-calibri-negrita);
     }
-
 }
 
 .Título-destaque{
@@ -199,15 +198,18 @@ a{
     align-items: center;
 }
 
-.Título_contenido{
+.text-1 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    position: relative;
-    flex-direction: column-reverse;
+    text-align: center;
+    padding: 1em; /* opcional para espacio */
+}
+
+.Título_contenido {
     font-family: var(--fuente-calibri-negrita);
     color: var(--color-gris-oscuro);
-    font-size: 180%
+    font-size: 200%;
 }
 
 .presentación{
