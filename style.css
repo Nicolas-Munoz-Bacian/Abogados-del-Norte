@@ -291,17 +291,17 @@ a{
 
 
 .slider img{
-    width: 60%;
+    width: 40%;
     height: 200px;
-    margin-right: 20px;
     border-radius: 18px;
-    flex-wrap: wrap-reverse;
+    justify-content: center;
     display: flex;
+    position: relative;
 }
 
 @media (min-width: 780px) {
     .slider img{
-        width: 80%;
+        width: 60%;
         height: 300px;
     }
 }
@@ -332,6 +332,18 @@ a{
     flex-wrap: wrap;
     margin:  10px 0px;
     flex-direction: column;
+}
+
+.user-info{
+    position: relative;
+    justify-items: center;
+    margin-left: 8rem;
+}
+
+.card-item-contenido{
+    justify-content: center;
+    position: relative;
+    width: 70%;
 }
 
 /**----FOOTER----**/

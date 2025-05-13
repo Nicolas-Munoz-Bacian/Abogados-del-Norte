@@ -238,7 +238,7 @@ a{
 
 .card_list_integrantes .card-item .user-name{
     display: flex;
-    color: var(--color-secundario);
+    color: var(--color-primario);
     justify-content: center;
 }
 
@@ -255,7 +255,7 @@ a{
     height: 50%;
     border-radius: 50%;
     margin-bottom: 50px;
-    background-color: var(--color-primario) ;
+    background-color: none ;
     border: none;
     padding: 0.5%;
     margin: 1rem 2rem 1rem 2rem;
@@ -306,6 +306,7 @@ a{
 .user-info{
     font-size: 100%;
     font-family: var(--fuente-calibri);
+    color: var(--color-primario);
     justify-items: center;
     flex-direction: column;
     position: relative;
